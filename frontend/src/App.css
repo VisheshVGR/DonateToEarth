@@ -1,0 +1,134 @@
+body{
+    background: url("./bg.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+}
+a{
+    text-decoration: none;
+}
+
+/* SCROLL BAR THEME */
+*::-webkit-scrollbar{
+	width: 10px;
+	background-color: #212529;
+  }
+*::-webkit-scrollbar-thumb{
+background-color: #506AD4;
+/* border-radius: 5px; */
+}
+
+/* NAVBAR CSS */
+.navbar .navbar-brand i, .footer-logo i{
+    color: #00ff00;
+}
+.navbar .navbar-brand , .footer-logo .navbar-brand{
+    color: white;
+    transition: 0.3s;
+}
+.navbar .navbar-brand:hover, .footer-logo .navbar-brand:hover{
+    color: #00ff00 !important;
+}
+
+/* HOME CSS */
+
+.contributor img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+h2, h3{
+    font-weight: bolder;
+}
+h3{
+    margin-top: 50px;
+}
+
+/* ERROR PAGE */
+.error-page{
+    margin-top: 30vh !important;
+    margin-bottom: 30vh !important;
+    display: flex;
+    flex-flow: nowrap column;
+}
+
+/* CONTRIBUTOR SECTION  */
+.contributor-section{
+	max-height: 70vh;
+	overflow-y: scroll;
+}
+/* SOCIAL ICONS */
+.wrapper{
+	color: #000;
+}
+.button-social {
+	float: left;
+ 	 margin: 0 10px;
+	width: 40px;
+	height: 40px;
+	cursor: pointer;
+	background: #fff;
+	overflow: hidden;
+	border-radius: 50px;
+	transition: all 0.3s ease-in-out;
+	box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+.button-social span {
+	font-size: 20px;
+	font-weight: 500;
+	line-height: 40px;
+	margin-left: 5px;
+}
+
+.button-social:hover {
+	width: 160px;
+}
+
+.button-social:nth-child(1):hover .icon {
+	background: #e1306c;
+}
+
+.button-social:nth-child(2):hover .icon {
+	background: #0e76a8;
+}
+
+
+.button-social:nth-child(3):hover .icon {
+	background: #333;
+}
+
+.button-social:nth-child(1) span {
+	color: #e1306c;
+}
+
+.button-social:nth-child(2) span {
+	color: #0e76a8;
+}
+
+.button-social:nth-child(3) span {
+	color: #333;
+}
+
+.button-social .icon {
+	width: 40px;
+	height: 40px;
+	text-align: center;
+	border-radius: 50%;
+	display: inline-block;
+	transition: all 0.3s ease-in-out;
+}
+
+.button-social .icon i {
+	font-size: 25px;
+	line-height: 40px;
+	transition: all 0.3s ease-in-out;
+}
+
+.button-social:hover i {
+	color: #fff;
+}
+
