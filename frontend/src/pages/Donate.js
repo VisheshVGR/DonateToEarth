@@ -40,7 +40,7 @@ const Donate = (props) => {
     const displayRazorPay = async () => {
         const { email } = currUser
 
-        const data = await fetch("https://donatetoearth.herokuapp.com/razorpay", {
+        const data = await fetch("/razorpay", {
             method: "POST",
             headers: {
                 'Accept': 'application/json',
@@ -57,7 +57,7 @@ const Donate = (props) => {
             "currency": data.currrency,
             "name": "Donate To Earth",
             "description": "Donation to save planet Earth.",
-            "image": "https://donatetoearth.herokuapp.com/logo.png",
+            "image": "/logo.png",
             "order_id": data.id,
             "handler": function (response) {
                 updateContributor(response.razorpay_payment_id,response.razorpay_order_id,response.razorpay_signature)
